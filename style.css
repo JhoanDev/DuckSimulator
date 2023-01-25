@@ -1,0 +1,57 @@
+header{
+    color:aliceblue;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(0, 18, 19);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    padding: 0em;
+    margin: 0em;
+    display: grid;
+    place-items: center;
+    -webkit-user-select:none;  
+    -moz-user-select:none;     
+    -ms-user-select:none;      
+    user-select:none;    
+}
+
+section{
+    width: 70vw;
+    height: 70vh;
+    border-radius: 15px;
+    border: 5px inset rgb(78, 127, 172);
+    background-image: url(src/img/city.jpg);
+    background-size: 1200px; 
+    background-position: center; 
+}
+
+footer{
+    font-style: italic;
+    color: aliceblue;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes bar {
+    0% {
+        border-bottom: 3px solid gray;
+    }
+    25% {
+        border-bottom: 3px solid rgb(124, 167, 164);
+    }
+    50% {
+        border-bottom: 3px solid rgb(98, 185, 180);
+    }
+    75% {
+        border-bottom: 3px solid rgb(62, 201, 191);
+    }
+    100% {
+        border-bottom: 3px solid rgb(0, 238, 255);
+    }
+}
