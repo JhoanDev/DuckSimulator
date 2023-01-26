@@ -18,6 +18,7 @@ body {
 }
 
 section{
+    position: relative;
     width: 70vw;
     height: 70vh;
     border-radius: 15px;
@@ -32,7 +33,24 @@ footer{
     color: aliceblue;
 }
 
-input::-webkit-outer-spin-button,
+.duck{
+    position: absolute;
+    padding: 10px;
+    width: 1em;
+    height: 2em;
+    top: 85%;
+}
+
+.cone{
+    position: absolute;
+    padding: 10px;
+    width: 2em;
+    height: 3em;
+    top: 82%;
+    left: 50%;
+}
+
+
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
