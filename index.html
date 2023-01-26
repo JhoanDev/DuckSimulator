@@ -12,26 +12,25 @@
         <h1>Duck simulator</h1>
     </header>
     <section>
+        <div id="informação" class="informação"> O pato percorrerá 750M </div>
         <div class="inputs">
-            <form>
-                <label for="vi">Velocidade inicial (m/s):</label>
-                <input type="text" id="vi" name="vi">
-                <br>
-                <label for="vf">Velocidade final (m/s):</label>
-                <input type="text" id="vf" name="vf">
-                <br>
-                <label for="t">Tempo (s):</label>
-                <input type="text" id="t" name="t">
-                <br>
-                <input type="button" value="Iniciar" onclick="start()">
-              </form> 
-            </div>
+            <input type="text" name="vi" id="vi" placeholder="Velocidade inicial (m/s)" onfocus="this.value=''">
+            <br>
+            <input type="text" name="vf" id="vf" placeholder="Velocidade final (m/s):" onfocus="this.value=''">
+            <br>
+            <button value="Iniciar" onclick="start()"> iniciar </button>
+        </div>
+        <div class="results">
+            <p id="current vel">Velocidade atual: <b>0 (m/s)</b></p>
+            <p id="Tempo gasto">Tempo gasto: <b>0 (s)</b></p>
+            <p id="aceleração">Aceleração: <b>0 (m/s)</b></p>
+        </div>
         <div class="duck" id="duck"> 
             <img src="src/img/Duckpng.png" alt="Duck" width="40" height="40">
         </div>
-        <div class="cone"> 
+        <!--<div class="cone"> 
             <img src="src/img/conepng.png" alt="Cone" width="60" height="60">
-        </div>
+        </div> -->
     </section>
     <footer>
         <P>&copy; JhoanDev</P>
