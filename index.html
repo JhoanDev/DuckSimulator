@@ -12,8 +12,26 @@
         <h1>Duck simulator</h1>
     </header>
     <section>
-        <div class="duck"> <img src="src/img/Duckpng.png" alt="Duck" width="40" height="40"></div>
-        <div class="cone"> <img src="src/img/conepng.png" alt="Cone" width="60" height="60"></div>
+        <div class="inputs">
+            <form>
+                <label for="vi">Velocidade inicial (m/s):</label>
+                <input type="text" id="vi" name="vi">
+                <br>
+                <label for="vf">Velocidade final (m/s):</label>
+                <input type="text" id="vf" name="vf">
+                <br>
+                <label for="t">Tempo (s):</label>
+                <input type="text" id="t" name="t">
+                <br>
+                <input type="button" value="Iniciar" onclick="start()">
+              </form> 
+            </div>
+        <div class="duck" id="duck"> 
+            <img src="src/img/Duckpng.png" alt="Duck" width="40" height="40">
+        </div>
+        <div class="cone"> 
+            <img src="src/img/conepng.png" alt="Cone" width="60" height="60">
+        </div>
     </section>
     <footer>
         <P>&copy; JhoanDev</P>
